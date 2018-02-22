@@ -2,21 +2,47 @@ html {
   box-sizing: border-box;
   background:#eeeeee;
   font-family:'helvetica neue';
-  font-size: 20px;
+  font-size: 20;
   font-weight: 200;
 }
 body {
   margin: 0;
+  margin:  auto;
+  width: 99%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
+h2 {
+  text-align: justify;
+  font-weight: strong;
+  font-size: 12px
+}
+
+h3 {
+  text-align: justify;
+  font-size: 20px
+}
+
+h4 {
+  text-align: justify;
+  font-size: 14px
+}
+
+h5 {
+  text-align: justify;
+  font-size: 11px
+
+}
+
+
+
 .site-wrap {
-  max-width: 700px;
-  margin: 70px auto;
+  max-width: 400%;
+  margin:  auto;
   background:white;
-  padding:40px;
+  padding:40%;
   text-align: justify;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
   transform: scale(0.98);
@@ -50,7 +76,7 @@ nav {
   width: 100%;
   transition:all 0.5s;
   position: relative;
-  z-index: 1;
+  z-index:  1;
 }
 
 body.fixed-nav nav {
@@ -90,11 +116,66 @@ li.logo a {
   max-width:500px;
 }
 
+
 nav a {
   text-decoration: none;
-  padding:20px;
+  padding: 20px;
   display: inline-block;
-  color:white;
+  color: white;
   transition:all 0.2s;
   text-transform: uppercase;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: white;
+  padding: 2.5%;
+}
+
+.grid-item {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 0px solid rgba(0, 0, 0, 0.8);
+  padding: 20%;
+  font-size: 30%;
+  text-align: center;
+}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 10px 100% 300%;
+  grid-gap: 10%;
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5%;
+  padding: 2%;
+  font-size: 8%;
+}
+
+.container {
+  width: auto; /* The width is fixed by pixels */
+  height: auto; /* The height is fixed by pixels*/
+  padding: 5%;
+  color: black;
+  background-color: white;
+}
+
+.img {
+    position: relative;
+    float: left;
+    width:  320px;
+    height: 230px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+
+.caption {
+    display: block;
 }
