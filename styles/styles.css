@@ -4,6 +4,7 @@ html {
   font-family:'helvetica neue';
   font-size: 20;
   font-weight: 200;
+  min-width: 1080px;
 }
 body {
   margin: 0;
@@ -36,13 +37,11 @@ h5 {
 
 }
 
-
-
 .site-wrap {
   max-width: 400%;
   margin:  auto;
   background:white;
-  padding:40%;
+  padding: 40%;
   text-align: justify;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
   transform: scale(0.98);
@@ -159,18 +158,22 @@ nav a {
 }
 
 .container {
-  width: auto; /* The width is fixed by pixels */
-  height: auto; /* The height is fixed by pixels*/
-  padding: 5%;
+  grid-auto-columns: auto;
+  width: 99%; /* The width is fixed by pixels */
+  height: 99%; /* The height is fixed by pixels*/
+  padding: 1%;
+  position: center;
   color: black;
-  background-color: white;
+  background-color: yellow;
 }
 
+/*max h*w = 375x211*/
+
 .img {
-    position: relative;
-    float: left;
-    width:  320px;
-    height: 230px;
+    position: center;
+    float: center;
+    height: 225px;
+    width: 350px;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
